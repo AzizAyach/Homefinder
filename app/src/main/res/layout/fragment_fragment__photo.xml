@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Fragment_Photo"
+    android:id="@+id/photocont">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView style="@style/WizardPageTitle" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Image1"
+             android:layout_weight="50"
+           />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Image2"
+            android:layout_weight="50"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Image3"
+            android:layout_weight="50"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Image4"
+            android:layout_weight="50"/>
+        </LinearLayout>
+        <Button
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Upload"
+            android:background="@color/com_facebook_blue"
+            android:textColor="@color/carbon_white"
+            android:gravity="center"
+            android:id="@+id/btn_Upload"/>
+    </LinearLayout>
+
+
+</FrameLayout>

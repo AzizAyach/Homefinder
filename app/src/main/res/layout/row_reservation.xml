@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="144dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="0" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="32dp"
+            android:layout_weight="0"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/reservation_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:src="@drawable/checked"
+                android:background="@color/float_transparent"
+
+                android:padding="4dp"
+                 />
+
+            <ImageButton
+                android:id="@+id/reservation_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/float_transparent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="0"
+                android:padding="4dp"
+                android:src="@drawable/cancel_reser"
+ />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right" >
+
+            <TextView
+                android:id="@+id/name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:textColor="@color/main_color_grey_700"
+                android:textSize="12sp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="40dp"
+                android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+                android:layout_height="40dp"
+                android:layout_marginLeft="24dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/datedebut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:paddingBottom="12dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:textColor="@color/main_color_grey_700"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/datefin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:paddingBottom="12dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:textColor="@color/main_color_grey_700"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/message_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:paddingBottom="12dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:textColor="@color/main_color_grey_700"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0"
+        android:background="@color/cpb_blue_dark" />
+
+</LinearLayout>

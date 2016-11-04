@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+        <item android:id="@+id/nav_Home"  android:icon="@drawable/welcom"
+            android:title="Home" />
+        <item android:id="@+id/nav_Add" android:icon="@drawable/plus"
+            android:title="Add House" />
+        <item android:id="@+id/nav_recherche" android:icon="@drawable/reche"
+            android:title="Search" />
+        <item android:id="@+id/nav_reserva" android:icon="@drawable/reservationblue"
+            android:title="Reservation"  />
+        <item android:id="@+id/nav_My" android:icon="@drawable/locaton"
+            android:title="My House" />
+        <item android:id="@+id/favori" android:icon="@drawable/likle"
+            android:title="Favoris"  />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item android:id="@+id/nav_con" android:icon="@drawable/conection"
+                android:title="Deconnexion" />
+        </menu>
+    </item>
+
+</menu>

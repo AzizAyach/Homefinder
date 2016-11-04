@@ -1,0 +1,369 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.DetailFragment"
+    android:background="@drawable/detail_back">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:orientation="vertical"><!-- TODO: Update blank fragment layout -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/detailpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="-30dp">
+      <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+ />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="60dp"
+                android:gravity="center_vertical|right" >
+
+                <TextView
+                    android:id="@+id/titrelog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="9dp"
+                    android:textColor="@color/carbon_white"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:gravity="center_vertical|right" >
+            <TextView
+                android:id="@+id/paysloge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:textColor="@color/carbon_white"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/gouvloge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:textColor="@color/carbon_white"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_background_empty"
+            android:minHeight="80dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="32dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical" >
+
+                    <ImageButton
+                        android:id="@+id/share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="@drawable/transparent_button_selector"
+                        android:padding="4dp"
+                        android:src="@drawable/sharef"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/favorid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/transparent_button_selector"
+                        android:layout_weight="0"
+                        android:src="@drawable/likefavoris"
+                        android:padding="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right" >
+
+                    <TextView
+                        android:id="@+id/cityloge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="0dp"
+                        android:textColor="@color/carbon_white"
+                        android:textSize="20sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/desc_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:paddingBottom="12dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:textColor="@color/carbon_white"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="0"
+                android:background="@color/wallet_holo_blue_light" />
+
+        </LinearLayout>
+        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:weightSum="3"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp">
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/rom32"
+                            />
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/bed32"
+                            />
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/tt32"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:weightSum="100"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_weight="33"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:textColor="@color/carbon_white"
+                            android:id="@+id/roomloge"
+                            android:text="1" />
+                        <TextView
+                            android:layout_weight="33"
+                            android:layout_width="0dp"
+                            android:id="@+id/bedloge"
+                            android:textColor="@color/carbon_white"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:text="1"
+                            />
+                        <TextView
+                            android:layout_weight="33"
+                            android:layout_width="0dp"
+                            android:id="@+id/toilloge"
+                            android:textColor="@color/carbon_white"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:text="1"
+
+                            />
+                    </LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/nightly" android:text="Night"
+                        android:layout_weight="1"
+                        android:textColor="@color/carbon_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10dip" android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/weekly" android:text="Weekly"
+                        android:layout_weight="2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/carbon_white"
+                        android:layout_height="match_parent"
+                        android:padding="10dip" android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/mounthly" android:text="Mounth"
+                        android:layout_weight="3"
+                        android:textColor="@color/carbon_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10dip" android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/minn" android:text="Min/Night"
+                        android:textSize="10dp"
+                        android:layout_weight="4"
+                        android:textColor="@color/carbon_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10dip" android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/mxi" android:text="Max/Night"
+                        android:textSize="10dp"
+                        android:layout_weight="5"
+                        android:textColor="@color/carbon_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10dip" android:gravity="center"/>
+
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/nightlytex" android:text="N"
+                        android:layout_weight="1"
+                        android:textColor="@color/carbon_white"
+                        android:textSize="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:padding="10dip" android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/weeklytex" android:text="W"
+                        android:layout_weight="2" android:textColor="@color/carbon_white"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:padding="10dip" android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/mounthlytex" android:text="M"
+                        android:layout_weight="3" android:textColor="@color/carbon_white"
+                        android:layout_height="match_parent"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:padding="10dip" android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/minntex" android:text="Min"
+                        android:layout_weight="4" android:textColor="@color/carbon_white"
+                        android:layout_height="match_parent"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:padding="10dip" android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/mxitex" android:text="Max"
+                        android:layout_weight="5" android:textColor="@color/carbon_white"
+                        android:textSize="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:padding="10dip" android:gravity="center"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <com.google.android.gms.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mapViewdetail"
+            android:apiKey="AIzaSyC42YJ1-O6R4YXhlwUbHk4nbwaJ2l77Kyw"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:src="@drawable/ic_add"
+        android:clickable="true"
+        app:backgroundTint="#ffa500"
+        app:rippleColor="@color/colorPrimaryDark"
+        android:layout_gravity="bottom|right">
+
+    </android.support.design.widget.FloatingActionButton>
+
+</FrameLayout>

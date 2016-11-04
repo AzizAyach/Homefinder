@@ -1,0 +1,124 @@
+
+
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    card_view:cardCornerRadius="7dp"
+    card_view:cardElevation="10dp"
+    android:layout_marginBottom="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:background="@color/carbon_white"
+        android:minHeight="340dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_weight="1"
+            android:minHeight="190dp" >
+
+            <ImageView
+                android:id="@+id/imagelog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imagetest"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/PrixRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@android:color/transparent"
+                android:text="Price"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/google_cards_background_bottom"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nomRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Name"
+                android:textColor="@color/material_blue_grey_300"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/DescRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="right"
+                android:maxLines="2"
+                android:text="descritpion"
+                android:textColor="@color/material_blue_grey_700"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" >
+
+                <TextView
+                    android:id="@+id/paysRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/transparent_button_selector"
+                    android:padding="8dp"
+                    android:text="Country"
+                    android:textColor="@color/main_color_500"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/cityRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/transparent_button_selector"
+                    android:padding="8dp"
+                    android:text="State"
+                    android:textColor="@color/main_color_500"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+

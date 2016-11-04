@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.ayach.org.homefinder.Util.DialogFilterFragment"
+    android:background="@color/carbon_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:text="Date Start"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:weightSum="100">
+            <DatePicker
+                android:layout_width="0dp"
+                android:id="@+id/starter"
+                android:layout_height="match_parent"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_weight="100"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Date end"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_weight="100"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20">
+            <DatePicker
+                android:id="@+id/enden"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:inputType="number"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:text="cancel"
+                android:textSize="28dp"
+                android:id="@+id/cancel_feed"
+                android:background="@color/blue_btn_bg_color"
+                android:textColor="@color/carbon_white"
+                />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:text="apply"
+            android:textSize="28dp"
+            android:id="@+id/apply_filter_feed"
+            android:background="@color/wallet_holo_blue_light"
+            android:textColor="@color/carbon_white"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

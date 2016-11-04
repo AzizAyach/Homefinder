@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.Fragment_Location"
+    style="@style/WizardPageContainer"
+    android:orientation="vertical">
+
+    <TextView style="@style/WizardPageTitle" />
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView style="@style/WizardFormLabel"
+                android:text="Mounthly" />
+
+            <EditText android:id="@+id/Mounth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="numberDecimal"
+                android:hint="Price Mounth"
+                android:layout_marginBottom="16dp" />
+
+            <TextView style="@style/WizardFormLabel"
+                android:text="Weekley" />
+
+            <EditText  android:id="@+id/weekl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="numberDecimal"
+                android:hint="Price Week"  />
+            <TextView style="@style/WizardFormLabel"
+                android:text="Nightly" />
+
+            <EditText android:id="@+id/Night"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="numberDecimal"
+                android:hint="Price Night" />
+            <TextView style="@style/WizardFormLabel"
+                android:text="Weekend" />
+
+            <EditText android:id="@+id/weeken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="numberDecimal"
+                android:hint="Price Weekend" />
+            <TextView style="@style/WizardFormLabel"
+                android:text="MAXNight"/>
+
+            <EditText android:id="@+id/Maxnight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="numberDecimal"
+                android:hint="Max Price of Night" />
+
+            <TextView style="@style/WizardFormLabel"
+                android:text="MinNight" />
+
+            <EditText   android:id="@+id/MinNi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="numberDecimal"
+                android:hint="Min Price of Night" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

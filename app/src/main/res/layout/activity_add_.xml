@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout_Add"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true" tools:openDrawer="start"
+    tools:context="com.ayach.org.homefinder.View.Add_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize" />
+
+    <com.tech.freak.wizardpager.ui.StepPagerStrip
+        android:id="@+id/strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="left"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/list_item_padding_left"
+        android:paddingRight="@dimen/list_item_padding_right"
+        android:paddingTop="16dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/homedeco"
+        android:alpha="0.8"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prev_button"
+            android:layout_width="0dp"
+            android:background="#ffa500"
+            android:textColor="@color/carbon_white"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="0dp"
+            android:background="#2C5197"
+            android:textColor="@color/carbon_white"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="select" />
+    </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/app_bar_main_" android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView android:id="@+id/nav_view"
+        android:layout_width="wrap_content" android:layout_height="match_parent"
+        android:layout_gravity="start" android:fitsSystemWindows="true"
+        android:background="#80000000"
+        app:itemTextColor="#FFFFFF"
+        app:theme="@style/NavigationDrawerStyle"
+        app:headerLayout="@layout/nav_header_main_" app:menu="@menu/activity_main__drawer" />
+
+
+</android.support.v4.widget.DrawerLayout>

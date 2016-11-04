@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context="com.ayach.org.homefinder.Fragments.Recherche_Fragment"
+    android:background="@drawable/serach_back">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/globale"
+            android:layout_marginTop="4dp" />
+
+        <AutoCompleteTextView
+            android:layout_width="0dp"
+            android:id="@+id/rech_country"
+            android:textColor="@color/carbon_white"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/states"
+            android:textColor="@color/main_color_50"
+            android:textSize="16dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rech_state"
+            android:textColor="@color/carbon_white"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp" >
+
+
+        <Button
+            android:id="@+id/filter_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="#ffa500"
+            android:minWidth="112dp"
+            android:text="Filter"
+            android:textColor="#fff" />
+        <LinearLayout
+            android:layout_width="9dp"
+            android:layout_height="9dp"></LinearLayout>
+        <Button
+            android:id="@+id/rech_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="#2C5197"
+            android:minWidth="112dp"
+            android:text="Search"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>
