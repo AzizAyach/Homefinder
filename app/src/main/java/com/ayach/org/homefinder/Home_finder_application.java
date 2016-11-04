@@ -24,6 +24,8 @@ import java.security.NoSuchAlgorithmException;
 public class Home_finder_application extends MultiDexApplication{
 
     public void onCreate() {
+
+
         super.onCreate();
 
         // Add your initialization code here
